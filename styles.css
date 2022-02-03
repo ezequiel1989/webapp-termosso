@@ -1,0 +1,240 @@
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Staatliches', cursive;
+
+color: #f5f5f5;
+color: #B1D0E0;
+color: #6998AB;
+color: #406882;
+color: #1A374D;
+
+color: #212529;
+color: #666666;
+
+color: #3cb371;
+
+*/
+
+
+/*GLOBAL______________________________________________________________*/
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: #212529;
+    opacity: 1;
+    background-image: radial-gradient(#666666 0.75px, #212529 0.75px);
+    background-size: 15px 15px;
+}
+
+
+/*MAIN________________________________________________________________*/
+
+.open {
+    background-image: url("IMG/BG_Termosso.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.open .row {
+    height: 100vh;
+}
+
+.open h1 {
+    font-family: 'Staatliches', cursive;
+    font-size: 15vw;
+    line-height: .8em;
+    color: #f5f5f5;
+    text-shadow: .05em .05em 0em #6998AB;
+}
+
+.open h2 {
+    font-family: 'Montserrat', sans-serif;
+    /*font-size: 3vw;*/
+    font-size: calc(1.325rem + 2vw);
+    font-weight: 600;
+    color: #f5f5f5;
+}
+
+.open p {
+    background-color: #6998AB;
+    color: #f5f5f5;
+    padding: 5px;
+}
+
+.openBajada {
+    padding: 0 20%;
+}
+
+.open img {
+    width: 7vw;
+    height: auto;
+}
+
+
+/*NAVBAR______________________________________________________________*/
+
+#navbar {
+    /*padding: 5vh 0px;*/
+    height: 15vh;
+}
+
+
+/*FEATURE_____________________________________________________________*/
+
+#section2 {
+    min-height: 100vh;
+    height: auto;
+    padding: 0px;
+}
+
+#section2feature .row {
+    /*min-height: 100vh;*/
+    height: auto;
+}
+
+.feature {
+    min-height: 60vh;
+    height: auto;
+    background-color: #212529;
+    box-shadow: 0px 5px 0px 0px #B1D0E0;
+}
+
+.feature img {
+    max-height: 20vh;
+}
+
+.feature h4 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #f5f5f5;
+}
+
+.feature p {
+    color: #f5f5f5;
+}
+
+
+/*SEPARATOR___________________________________________________________*/
+
+.progress {
+    background: rgba(1, 15, 30, 0.1);
+    height: 1px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress::before {
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-name: progress;
+    background: #111;
+    content: "";
+    display: block;
+    height: 1px;
+    position: absolute;
+    width: 80px;
+}
+
+@keyframes progress {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(1440px);
+    }
+}
+
+
+/*SLIDER & CONTACT____________________________________________________*/
+
+.bgSection3 {
+    background-color: #66666600;
+}
+
+.section3row {
+    /*min-height: 100vh;*/
+    height: auto;
+}
+
+.contactTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(1.325rem + 2vw);
+    font-weight: 600;
+    color: #f5f5f5;
+    background-color: #666666;
+}
+
+.bajada {
+    color: #f5f5f5;
+    background-color: #6998AB;
+}
+
+#mail {
+    background-color: #3cb371;
+    color: #f5f5f5;
+    line-height: 2em;
+    border-radius: 4px;
+    padding: 1em;
+    padding-left: .6em;
+}
+
+#mail:hover {
+    background-color: #6998AB;
+    color: #f5f5f5;
+    padding-left: 3em;
+    transition: .3s;
+}
+
+.map {
+    box-shadow: 5px 5px #6998AB;
+}
+
+.social-container {
+    height: 40px;
+    display: inline-block;
+    align-items: center;
+}
+
+.social {
+    height: 40px;
+    max-height: 40px;
+    max-width: auto;
+}
+
+.social:hover {
+    opacity: .8;
+    transition: .3s;
+}
+
+
+/*FORM________________________________________________________________*/
+
+.form-label {
+    color: #f5f5f5;
+}
+
+
+/*FOOTER______________________________________________________________*/
+
+#footer {
+    padding: 5px 0px;
+    margin: 0px;
+    background-color: #406882;
+    color: #B1D0E0;
+}
+
+#footer p {
+    font-size: .7em;
+}
+
+#footer .p2 {
+    color: #ffffff;
+    font-weight: bold;
+}
