@@ -19,6 +19,10 @@ color: #3cb371;
 
 /*GLOBAL______________________________________________________________*/
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
@@ -29,6 +33,14 @@ body {
     opacity: 1;
     background-image: radial-gradient(#666666 0.75px, #212529 0.75px);
     background-size: 15px 15px;
+    overflow: scroll;
+    position: relative;
+}
+
+#landpage {
+    min-height: 100vh;
+    height: auto;
+    padding: 0px;
 }
 
 
@@ -81,21 +93,18 @@ body {
 /*NAVBAR______________________________________________________________*/
 
 #navbar {
-    /*padding: 5vh 0px;*/
     height: 15vh;
 }
 
 
 /*FEATURE_____________________________________________________________*/
 
-#section2 {
-    min-height: 100vh;
-    height: auto;
-    padding: 0px;
+#sectionFeatures {
+    padding-top: 20vh;
 }
 
-#section2feature .row {
-    /*min-height: 100vh;*/
+#sectionFeatures .row {
+    min-height: 50vh;
     height: auto;
 }
 
@@ -152,72 +161,126 @@ body {
 }
 
 
-/*SLIDER & CONTACT____________________________________________________*/
+/*SLIDER _____________________________________________________________*/
+
+#sectionSlider {
+    /*scroll-margin-top: 15vh;*/
+    padding-top: 20vh;
+    min-height: 30vh;
+    height: auto;
+}
 
 .bgSection3 {
     background-color: #66666600;
 }
 
-.section3row {
-    /*min-height: 100vh;*/
+.destacado {
+    color: #f5f5f5;
+}
+
+.carousel-inner {
+    box-shadow: 0px 5px 0px 0px #f5f5f5;
+}
+
+
+/*MAYORISTAS__________________________________________________________*/
+
+#mayoristas {
+    /*scroll-margin-top: 15vh;*/
+    background-image: url(IMG/cajasTransparencia.png);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: #6998AB;
+    min-height: 95vh;
     height: auto;
 }
 
-.contactTitle {
-    font-family: 'Montserrat', sans-serif;
+#mayoristas .container .row {
+    min-height: 95vh;
+    height: auto;
+    padding-top: 15vh;
+}
+
+#col1 {
+    background-color: #406882;
+    min-height: 65vh;
+    height: auto;
+}
+
+#col1 h2 {
     font-size: calc(1.325rem + 2vw);
     font-weight: 600;
     color: #f5f5f5;
-    background-color: #666666;
 }
 
-.bajada {
+#col1 p {
+    color: #f5f5f5;
+}
+
+#col2 {
+    min-height: 65vh;
+    height: auto;
+}
+
+#col2 h4 {
     color: #f5f5f5;
     background-color: #6998AB;
+    padding: 10px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-transform: uppercase;
 }
 
-#mail {
-    background-color: #3cb371;
+#col2 p {
     color: #f5f5f5;
-    line-height: 2em;
-    border-radius: 4px;
-    padding: 1em;
-    padding-left: .6em;
 }
 
-#mail:hover {
+#hr2 {
     background-color: #6998AB;
-    color: #f5f5f5;
-    padding-left: 3em;
-    transition: .3s;
-}
-
-.map {
-    box-shadow: 5px 5px #6998AB;
-}
-
-.social-container {
-    height: 40px;
-    display: inline-block;
-    align-items: center;
-}
-
-.social {
-    height: 40px;
-    max-height: 40px;
-    max-width: auto;
-}
-
-.social:hover {
-    opacity: .8;
-    transition: .3s;
+    color: #ffffff00;
+    width: 100%;
+    height: 5px;
 }
 
 
 /*FORM________________________________________________________________*/
 
-.form-label {
+#sectionForm {
+    min-height: 85vh;
+    height: auto;
+    padding-top: 20vh;
     color: #f5f5f5;
+}
+
+#sectionComprar {
+    background-image: url("IMG/mate_primer_plano.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 85vh;
+    height: auto;
+}
+
+#sectionComprar h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(1.325rem + 2vw);
+    font-weight: 600;
+    color: #f5f5f5;
+    text-shadow: .07em .07em 0em #212529;
+}
+
+.miniatura {
+    max-height: 30px;
+}
+
+.btnForm {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.btnForm:hover {
+    color: #6998AB;
+    transition: .3s;
 }
 
 
